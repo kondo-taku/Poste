@@ -8,6 +8,7 @@ html {
     font-size: 1rem;
 }
 
+
 body {
     padding-top: 55px;
 }
@@ -105,13 +106,14 @@ h2 {
 
 #TopWrapper {
     width: 100%;
-    height: 750px;
+    height: 647px;
     background-image: url(../image/Toppage_Background.png);
     background-position: 0 0;
-    background-size: contain;
+    background-size: cover;
     position: relative;
     background-repeat: no-repeat;
 }
+
 
 #map {
     display: block;
@@ -121,7 +123,9 @@ h2 {
     position: absolute;
     margin-top: 404px;
     margin-left: 120px;
+    opacity: 0;
 }
+
 
 #post {
     display: block;
@@ -131,9 +135,12 @@ h2 {
     position: absolute;
     margin-top: 491px;
     margin-left: 124px;
+    opacity: 0;
 }
 
-
+a:active {
+    background-color: #FF0000;
+}
 
 
 
