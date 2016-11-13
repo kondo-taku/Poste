@@ -121,6 +121,7 @@ function cameraload(){
     navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
         destinationType: Camera.DestinationType.DATA_URL
     });
+    window.location.href = 'dispatch.html'; // 通常の遷移
 
     function onSuccess(imageData) {
         var image = document.getElementById('myImage');

@@ -7,14 +7,8 @@
     <script src="components/loader.js"></script>
     <!--<link rel="stylesheet" href="components/loader.css">-->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/css/swiper.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/css/swiper.min.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.jquery.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.x.x/js/swiper.jquery.min.js"></script>
-    
 </head>
 <body>
     
@@ -22,15 +16,41 @@
         <h1><a href="index.html">Poste</a><h1>
     </div>
     
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide"> 
-                <img src="../image/2016-08-17.png" alt="">
-        	</div>
-        </div>
+    <h2 id="TitlePreview"><i class="fa fa-file-image-o" aria-hidden="true" style="margin-right:5px;"></i>全体プレビュー</h2>
+    
+    <div id="Show_Box">
+        <img id="Show_Image" src="image/syasinntuki.png" alt="" height="500px">
     </div>
     
+    <h2 id="TitleAtesaki"><i class="fa fa-paper-plane" aria-hidden="true" style="margin-right: 5px;"></i>あて先</h2>
+    
+    <div id="Post_Destination">
+        <ul>
+            <li id="li_Yubin">
+                <label for="" class="lblform">郵便番号</label>
+                <input id="txtYubin" type="text">
+            </li>
+            <li id="li_Jyusyo">
+                <label for="" class="lblform">住所</label>
+                <input id="txtJyusyo" type="text">
+            </li>
+            <li id="li_Namae">
+                <div>
+                    <label for="" class="lblform">姓</label>
+                    <input id="txtSei" type="text">
+                </div>
+                <div>
+                    <label for="" class="lblform">名</label>
+                    <input id="txtMei" type="text">
+                </div>
+                
+            </li>
+        </ul>
+    </div>
+    
+    <div style="text-align: center;margin-top: 135px;margin-bottom: 20px;">
+        <a href="" id="Jikkou">Post</a>
+    </div>
 
-</div>
 </body>
 </html>
