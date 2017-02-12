@@ -73,7 +73,7 @@ function initialize() {
                     ),
 			    } ) ;
             
-                var ncmb = new NCMB("7926e420f85f6c56e51acac58504f5477b512082e52cb7251b2a2e2c5d54549c","d17aba4cd758fd2b132877d0b554730b7e8935336d59c215eafa6f0be485bd2d");
+                var ncmb = new NCMB("f74148b7bd564945712df47632b33cb33fd212b238333898f6fddee3bfd4bef7","711b2abb79dd1e5fb66b64b8c08b05e5c0bf341226717fd7dea87986fc066e53");
                 var Location = ncmb.DataStore("Location");
                 Location.fetchAll().then(function(results){
                     for (var i = 0; i < results.length; i++) {
@@ -86,7 +86,7 @@ function initialize() {
 				            position: latlng ,
 			            } ) ;
             
-                    var contentstring = "<div class='outline'><h3> " + object.get("name") + "</h3><br><img class='markerimage' src=https://mb.api.cloud.nifty.com/2013-09-01/applications/00sUGWLDFbrF8CWj/publicFiles/" + object.get("filename") +  "/> " + "<br>" + object.get("Desc") + "<br><p class='test'>有効範囲内です</p><button class='camera' onClick='cameraload()'></button></div>"
+                    var contentstring = "<div class='outline'><h3> " + object.get("name") + "</h3><br><img class='markerimage' src=https://mb.api.cloud.nifty.com/2013-09-01/applications/WAFcXSexcbhiykAh/publicFiles/" + object.get("filename") +  "/> " + "<br>" + object.get("Desc") + "<br><p class='test'>有効範囲内です</p><button class='camera' onClick='cameraload()'></button></div>"
                     
                     infoWindow[i] = new google.maps.InfoWindow({
                         content: contentstring
